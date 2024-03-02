@@ -35,18 +35,38 @@ body{
 .tall-90 { min-height: 90vh;}
 .tall-100 { min-height: 100vh;}
 
-/* background and colors */
+/* background styles */
 .bg-dark{ 
     background-color: #192b37;
     color: #ffffff;
 }
 
-.featured-text-yellow{ color: #ffbe80;}
-
-/* Typography styles */
+/* typography styles */
 .text-left  {text-align: left;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
+
+.featured-text-yellow{ color: #ffbe80;}
+
+.font-weight-light{font-weight:200;}
+.font-weight-normal{font-weight:normal;}
+.font-weight-extra-bold{font-weight:800;}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
 
 /* ======================== Header Styles ==================================== */
 
