@@ -6,25 +6,19 @@
     box-sizing: border-box;
 }
 
-/* ====== Temp styles that need to be removed for structural HTML ============*/
 /* CHANGE ALL CLASS AND SELECTOR NAMES, THEY SUCK CURRENTLY */
-*{
-    padding: 0.5rem;
+
+/* ====== Temp styles ================================= ============*/
+
+section{
     border: 2px solid gray;
 }
+/* ====================== Universal Styles & Utility Classes ==============*/
 
-body{border: none;}
-html{border: none;}
-
-
-/* ======================== Image Styles ==================================== */
-.bg-image{
-    background-image: url('/images/the-sleep-co-bed.jpg');
-    background-size: cover;
-    min-height: 10rem;
+body{
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37;
 }
-
-/* ====================== Universal Styles and Utility Classes ==============*/
 
 /* spacing */
 .padded {padding: 5%;}
@@ -34,4 +28,16 @@ html{border: none;}
 .bg-dark{ 
     background-color: #192b37;
     color: #ffffff;
+}
+
+/* Typography styles */
+.text-left  {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+/* ======================== Image Styles ==================================== */
+.bg-image{
+    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    min-height: 10rem;
 }
