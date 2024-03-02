@@ -1,3 +1,12 @@
+
+/* CHANGE ALL CLASS AND SELECTOR NAMES, THEY SUCK CURRENTLY */
+
+/* 
+    Colors: 
+    Yellow - #ffbe80;
+    Navy Blue - #192b37
+*/
+
 *,
 ::before,
 ::after{
@@ -5,8 +14,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-/* CHANGE ALL CLASS AND SELECTOR NAMES, THEY SUCK CURRENTLY */
 
 /* ====== Temp styles ================================= ============*/
 
@@ -24,16 +31,35 @@ body{
 .padded {padding: 5%;}
 .padded-sm {padding: 1rem;}
 
+.tall-80 { min-height: 80vh;}
+.tall-90 { min-height: 90vh;}
+.tall-100 { min-height: 100vh;}
+
 /* background and colors */
 .bg-dark{ 
     background-color: #192b37;
     color: #ffffff;
 }
 
+.featured-text-yellow{ color: #ffbe80;}
+
 /* Typography styles */
 .text-left  {text-align: left;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
+
+/* ======================== Header Styles ==================================== */
+
+header{
+    background-image: url('images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h3{
+ font-size: 5.5rem;
+ line-height: 1;
+}
 
 /* ======================== Image Styles ==================================== */
 .bg-image{
