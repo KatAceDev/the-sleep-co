@@ -97,7 +97,7 @@ p:last-child{
 
 /* image styles */
 .bg-image{
-    background-image: url('/images/the-sleep-co-bed.jpg');
+    background-image: url('images/the-sleep-co-bed.jpg');
     background-size: cover;
     min-height: 10rem;
 }
@@ -127,15 +127,15 @@ header h3{
 
 /* ======================== Background Images ==================================== */
 
-.bg-night-stand{background-image: url('/images/the-sleep-co-night-stand.jpg');}
+.bg-night-stand{background-image: url('images/the-sleep-co-night-stand.jpg');}
 
 .bg-pug{
-    background-image: url('/images/the-sleep-co-pup.jpg');
+    background-image: url('images/the-sleep-co-pup.jpg');
     background-position: 50% 35%;
 }
 
 .bg-pillow{
-    background-image: url('/images/the-sleep-co-pillow.jpg');
+    background-image: url('images/the-sleep-co-pillow.jpg');
     background-position: 50% 57%;
 }
 
