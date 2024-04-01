@@ -15,11 +15,6 @@
     box-sizing: border-box;
 }
 
-/* ====== Temp styles ================================= ============*/
-
-/* section{
-    border: 2px solid gray;
-} */
 /* ====================== Universal Styles & Utility Classes ==============*/
 
 body{
@@ -43,6 +38,10 @@ body{
 .bg-dark{ 
     background-color: #192b37;
     color: #ffffff;
+}
+
+.bg-featured{
+    background-color: #ffbe80;
 }
 
 /* typography styles */
@@ -77,10 +76,15 @@ body{
 .font-weight-bold{font-weight:bold;}
 .font-weight-extra-bold{font-weight:800;}
 
+
+/* Typography */
+h2,  h3, h4, h5, h6{
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
 h2{
     font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
 }
 
 h3{line-height: 1;}
