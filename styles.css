@@ -41,7 +41,11 @@ body{
 }
 
 .bg-featured{
-    background-color: #ffbe80;
+    background-color: #F6B92A;
+}
+
+.bg-lightblue{
+    background-color: #E3ECF2;
 }
 
 /* typography styles */
@@ -49,7 +53,7 @@ body{
 .text-center {text-align: center;}
 .text-right {text-align: right;}
 
-.featured-text-yellow{ color: #ffbe80;}
+.featured-text-yellow{ color: #F6B92A;}
 .white-text{ color: #ffffff;}
 
 .small-text{font-size: 1.5rem;}
@@ -106,6 +110,10 @@ p:last-child{
     min-height: 10rem;
 }
 
+.landscape{ padding-bottom: 65%;}
+.portrait{ padding-bottom: 125%;}
+.square{ padding-bottom: 100%;}
+
 /* link styles */
 
 a{
@@ -113,7 +121,7 @@ a{
 }
 
 a:hover{
-    color:#ffbe80;
+    color:#F6B92A;
 }
 
 /* ======================== Header Styles ==================================== */
@@ -155,4 +163,11 @@ header h3{
 /* ======================== Footer styles=========================================== */
 footer a{
     color: inherit;
+}
+
+/* ===================================Form section================================ */
+input,
+textarea{
+    width: 100%;
+    display: block;
 }
