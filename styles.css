@@ -143,6 +143,7 @@ nav a{
     padding: 0.5rem;
     display: inline-block;
     border: none;
+    font-size: 1.3rem;
 }
 .logo h2{
     margin-bottom: 0;
