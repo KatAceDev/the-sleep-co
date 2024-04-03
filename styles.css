@@ -130,6 +130,7 @@ header{
     background-image: url('images/the-sleep-co-bed.jpg');
     background-size: cover;
     background-position: center;
+    padding: 1% 5%;
 }
 
 header h3{
