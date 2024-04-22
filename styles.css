@@ -81,7 +81,7 @@ body{
 .font-weight-extra-bold{font-weight:800;}
 
 
-/* Typography */
+/*============================= Typography =====================================*/
 h2,  h3, h4, h5, h6{
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -228,8 +228,7 @@ textarea:focus{
 @media (max-width: 64em) {
   .show-md { display: block; }
   .hide-md { display: none;  }
-
-  .md-tall-80{ min-height: 80vh};
+  .md-tall-80 { min-height: 80vh};
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
