@@ -1,0 +1,304 @@
+
+/* CHANGE ALL CLASS AND SELECTOR NAMES, THEY SUCK CURRENTLY */
+
+/* 
+    Colors: 
+    Yellow - #ffbe80;
+    Navy Blue - #192b37
+*/
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ====================== Universal Styles & Utility Classes ==============*/
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    color: #192b37;
+}
+
+/* spacing */
+.padded {padding: 5%;}
+.padded-sm {padding: 1rem;}
+.padded-lg {padding: 10%;}
+
+.tall-50 { min-height: 50vh;}
+.tall-60 { min-height: 60vh;}
+.tall-70 { min-height: 70vh;}
+.tall-80 { min-height: 80vh;}
+.tall-90 { min-height: 90vh;}
+.tall-100 { min-height: 100vh;}
+
+/* background styles */
+.bg-dark{ 
+    background-color: #192b37;
+    color: #ffffff;
+}
+
+.bg-featured{
+    background-color: #F6B92A;
+}
+
+.bg-lightblue{
+    background-color: #E3ECF2;
+}
+
+/* typography styles */
+.text-left  {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+
+.featured-text-yellow{ color: #F6B92A;}
+.white-text{ color: #ffffff;}
+
+.small-text{font-size: 1.5rem;}
+.med-text{
+    font-size:2rem; 
+    line-height: 1.2;}
+
+.big-text{font-size: 4.5rem;}
+
+.subtitle{
+    font-size: 1.2rem;
+    color:#6c757d;
+}
+
+.quote-icon{
+    font-size:5rem;
+    display:inline-block;
+    color:#6c757d;
+    line-height: 1;
+}
+
+.font-weight-light{font-weight:200;}
+.font-weight-normal{font-weight:normal;}
+.font-weight-bold{font-weight:bold;}
+.font-weight-extra-bold{font-weight:800;}
+
+
+/*============================= Typography =====================================*/
+h2,  h3, h4, h5, h6{
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{line-height: 1;}
+
+p{
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+/* image styles */
+.bg-image{
+    background-image: url('images/the-sleep-co-bed.jpg');
+    background-size: cover;
+}
+
+.landscape{ padding-bottom: 65%;}
+.portrait{ padding-bottom: 125%;}
+.square{ padding-bottom: 100%;}
+
+/* link styles */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:#F6B92A;
+}
+
+/* ======================== Header Styles ==================================== */
+
+header{
+    background-image: url('images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2% 5%;
+}
+
+header h3{
+ font-size: 5.5rem;
+ line-height: 1;
+}
+
+
+nav a{
+    padding: 0.5rem;
+    display: inline-block;
+    border: none;
+    font-size: 1.3rem;
+    color:#192b37;
+}
+.logo h2{
+    margin-bottom: 0;
+    color:#192b37;
+}
+
+/* ======================== Background Images ==================================== */
+
+.bg-night-stand{background-image: url('images/the-sleep-co-night-stand.jpg');}
+
+.bg-pug{
+    background-image: url('images/the-sleep-co-pup.jpg');
+    background-position: 50% 35%;
+}
+
+.bg-pillow{
+    background-image: url('images/the-sleep-co-pillow.jpg');
+    background-position: 50% 57%;
+}
+
+/* ======================== Icon grid============================================= */
+
+.fa-solid{
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+/* ======================== Footer styles=========================================== */
+footer a{
+    color: inherit;
+}
+
+/* ===================================Form section================================ */
+input,
+textarea{
+    width: 100%;
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus{
+    border: 2px solid #F6B92A;
+    outline: none;
+}
+
+.button{
+    padding: 0.3rem 2rem;
+    background-color: #F6B92A;
+    appearance: none;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 5%;
+    font-size: 1rem;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #192b37;
+    border: none;
+}
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+  .md-tall-80 { min-height: 80vh};
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+html{
+    font-size: 14px;
+}
+
+p{ font-size: 1.1rem};
+
+@media (max-width: 48em) {
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+
+  .logo h2{
+    font-size: 2rem;
+  }
+  header h3{
+    font-size: 11vw;
+  }
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+
+  h1{
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+}
+
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+html{
+    font-size: 13px;
+}
+
+@media (max-width: 25em) {
+   [class*="grid"] .xxs-stack{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+  
+  }
