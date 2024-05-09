@@ -1,15 +1,15 @@
 ---
 layout: default
 cards:
- - heading: Small heading
- - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image: /images/the-sleep-co-pillow.jpg
- - heading: Small heading
- - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image: /images/the-sleep-co-pillow.jpg
- - heading: Small heading
- - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image: /images/the-sleep-co-pillow.jpg
+ - heading: A nice heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
+   featured_image: /images/the-sleep-co-pillow.jpg
+ - heading: A better heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
+   featured_image: /images/the-sleep-co-night-stand.jpg
+ - heading: A great heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
+   featured_image: /images/the-sleep-co-pug.jpg
 ---
         
     <!-------------------- Header banner ---------------------->
@@ -58,7 +58,7 @@ cards:
     <section class="grid padded">
 
         {% for item in page.cards %}
-        <div class="col-4 padded">
+        <div class="col-4 padded-sm">
             <div class="card">
                 <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
                 <div class="padded">
@@ -69,6 +69,7 @@ cards:
         </div>       
         {% endfor %}
     </section>
+
 
     <!-------------------- Image Banner -----------------------> 
         
