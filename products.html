@@ -3,13 +3,13 @@ layout: default
 cards:
  - heading: Small heading
  - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image: images/the-sleep-co-pillow.jpg
+ - featured_image: /images/the-sleep-co-pillow.jpg
  - heading: Small heading
  - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image:
+ - featured_image: /images/the-sleep-co-pillow.jpg
  - heading: Small heading
  - description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, omnis! Cumque eius placeat sapiente doloribus eveniet iure nesciunt incidunt.
- - featured_image:
+ - featured_image: /images/the-sleep-co-pillow.jpg
 ---
         
     <!-------------------- Header banner ---------------------->
@@ -60,7 +60,7 @@ cards:
         {% for item in page.cards %}
         <div class="col-4 padded">
             <div class="card">
-                <div class="bg-image portrait" style="background-image: url('item.featured_image')"></div>
+                <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
                 <div class="padded">
                     <h3>{{item.heading}}</h3>
                     <p>{{item.description}}</p>
