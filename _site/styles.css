@@ -216,9 +216,14 @@ textarea:focus{
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
+.hide-sm{
+    display: block;
+}
+
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
