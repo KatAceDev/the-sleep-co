@@ -214,6 +214,33 @@ textarea:focus{
     border: none;
 }
 
+/* ===================== Mobile Menu ============================ */
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mobile-menu a{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hamburger-btn i{
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+.hamburger-btn:hover{
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
 .hide-sm{
